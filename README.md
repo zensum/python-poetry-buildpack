@@ -9,9 +9,10 @@ The Python Poetry Buildpack prepares the build to be processed by a Python build
 To set up the use of several buildpacks from the Heroku CLI use `buildpacks:add`:
 
 ```
-heroku buildpacks:clear
-heroku buildpacks:add https://github.com/moneymeets/python-poetry-buildpack.git
-heroku buildpacks:add heroku/python
+app="customer-data-service-dev"
+heroku buildpacks:clear --app $app
+heroku buildpacks:add https://github.com/zensum/python-poetry-buildpack.git --app $app
+heroku buildpacks:add heroku/python --app $app
 ```
 
 ## Configuration
