@@ -43,7 +43,7 @@ curl -sSL https://install.python-poetry.org \
     
 log "Adding poetry to the PATH"
 echo $PATH
-export PATH="/app/.local/bin:$PATH"
+export PATH="/root/.local/bin:$PATH"
 echo $PATH
 
 REQUIREMENTS_FILE="requirements.txt"
