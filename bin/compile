@@ -42,7 +42,7 @@ curl -sSL https://install.python-poetry.org \
     | indent
     
 log "Adding poetry to the PATH"
-export PATH="/app/.local/bin:$PATH"
+export PATH="/root/.local/bin:$PATH:/app/.local/bin:$PATH"
 
 REQUIREMENTS_FILE="requirements.txt"
 
